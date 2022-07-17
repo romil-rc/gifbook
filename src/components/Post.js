@@ -14,7 +14,7 @@ const Post = ({ message, name, image, timestamp }) => {
             </div>
             <div className='space-y-2'>
                 <p className='text-left font-medium'>{message}</p>
-                {image ? <img className='w-full h-96 rounded-md' src={image} alt="" /> : null}
+                {image ? <img className='w-full h-auto rounded-md' src={image} alt="" /> : null}
                 
             </div>
             <div className='flex justify-between'>
