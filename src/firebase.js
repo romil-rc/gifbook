@@ -3,13 +3,16 @@ import firebase from 'firebase/compat/app';
 import 'firebase/compat/storage';
 import 'firebase/compat/firestore';
 
+const api_key = process.env.REACT_APP_GIFBOOK_API;
+
 const firebaseConfig = {
-    apiKey: "AIzaSyAJGZtuAeOGXIlUP2qJErXmQyOApar6zj8",
-    authDomain: "fb-like-posts.firebaseapp.com",
-    projectId: "fb-like-posts",
-    storageBucket: "fb-like-posts.appspot.com",
-    messagingSenderId: "810576208308",
-    appId: "1:810576208308:web:c9fbf1aa6e666d53f312e1"
+    apiKey: api_key,
+    authDomain: "gifbook-83e80.firebaseapp.com",
+    projectId: "gifbook-83e80",
+    storageBucket: "gifbook-83e80.appspot.com",
+    messagingSenderId: "688205059373",
+    appId: "1:688205059373:web:2efa89af2d21d3f5c32fa4",
+    measurementId: "G-KLNNDBRN6L"
 };
 
 const app = !firebase.apps.length ? firebase.initializeApp(firebaseConfig) : firebase.app();
